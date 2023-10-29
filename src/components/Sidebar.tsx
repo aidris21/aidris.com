@@ -7,7 +7,7 @@ interface SidebarProps {
   outerContainerId: string
 }
 
-const Sidebar = (props: SidebarProps): JSX.Element => {
+const Sidebar = (props: SidebarProps): React.JSX.Element => {
   return (
     <Menu>
       <a className="menu-item" href="/">

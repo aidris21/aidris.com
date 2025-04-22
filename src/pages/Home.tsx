@@ -1,7 +1,7 @@
 import React from 'react';
 import background_img from '../images/amiridris.jpeg'
 import foreground from '../images/skyline.svg'
-import SocialLinks from './SocialLinks'
+import SocialLinks from '../components/SocialLinks'
 
 export const Home: React.FC = () => {
     return ( 

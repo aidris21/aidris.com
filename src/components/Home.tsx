@@ -12,11 +12,11 @@ export const Home: React.FC = () => {
                         <img 
                             src={background_img} 
                             alt="Profile" 
-                            className="w-48 h-48 rounded-full object-cover border-4 border-white shadow-lg"
+                            className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-lg"
                         />
                     </div>
-                    <img src={foreground} className="absolute inset-0 h-full w-full object-cover -z-10 transform scale-150 opacity-90"></img>
-                    <h1 className="text-7xl text-white shadow-text z-10">Let's do this one last time...</h1>
+                    <img src={foreground} alt="City Skyline" className="absolute inset-0 h-full w-full object-cover -z-10 transform scale-150 opacity-90"></img>
+                    <h1 className="text-7xl bg-gradient-to-r from-white via-blue-100 to-blue-200 text-transparent bg-clip-text tracking-tight z-10">Amir Idris</h1>
                 </header>
                 <SocialLinks />
             </div>

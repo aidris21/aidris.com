@@ -21,19 +21,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ skill, onClick }) => {
         <p className="text-sm text-[#6a92de] font-medium">{skill.category}</p>
       </div>
 
-      {/* Proficiency Bar */}
-      <div className="mb-4">
-        <div className="flex justify-between items-center mb-2">
-          <span className="text-sm font-medium text-gray-700">Proficiency</span>
-          <span className="text-sm font-bold text-[#6a92de]">{skill.proficiency}%</span>
-        </div>
-        <div className="w-full bg-gray-200 rounded-full h-2">
-          <div
-            className="bg-gradient-to-r from-[#6a92de] to-[rgb(167,194,230)] h-2 rounded-full transition-all duration-500 ease-out"
-            style={{ width: `${skill.proficiency}%` }}
-          ></div>
-        </div>
-      </div>
+
 
       {/* Click to learn more */}
       <div className="text-center">

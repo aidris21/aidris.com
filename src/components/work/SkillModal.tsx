@@ -62,20 +62,6 @@ const SkillModal: React.FC<SkillModalProps> = ({ skill, isOpen, onClose }) => {
 
           {/* Content */}
           <div className="p-8">
-            {/* Proficiency */}
-            <div className="mb-8">
-              <div className="flex justify-between items-center mb-3">
-                <h3 className="text-xl font-semibold text-gray-900">Proficiency Level</h3>
-                <span className="text-2xl font-bold text-[#6a92de]">{skill.proficiency}%</span>
-              </div>
-              <div className="w-full bg-gray-200 rounded-full h-3">
-                <div
-                  className="bg-gradient-to-r from-[#6a92de] to-[rgb(167,194,230)] h-3 rounded-full transition-all duration-1000 ease-out"
-                  style={{ width: `${skill.proficiency}%` }}
-                ></div>
-              </div>
-            </div>
-
             {/* Description */}
             <div className="mb-8">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">Description</h3>

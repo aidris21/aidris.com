@@ -5,7 +5,6 @@ export interface Skill {
   name: string;
   category: string;
   icon: string;
-  proficiency: number;
   description: string;
   experience: string;
   projects: string[];

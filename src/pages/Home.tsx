@@ -1,16 +1,16 @@
 import React from 'react';
-import background_img from '../images/amiridris.jpeg'
+import profile_img from '../images/amiridris.jpeg'
 import foreground from '../images/skyline.svg'
 import SocialLinks from '../components/SocialLinks'
 
 export const Home: React.FC = () => {
     return ( 
         <div className="min-h-screen w-full bg-black overflow-hidden">
-            <div className="min-h-screen w-full overflow-y-auto overflow-x-hidden perspective-10 bg-gradient-to-b from-[#000B1A] via-[#001233] to-black">
+            <div className="min-h-screen w-full overflow-y-auto overflow-x-hidden perspective-10 bg-gradient-to-b from-[rgb(167,194,230)] via-[#6a92de] to-black">
                 <header className="relative flex flex-col justify-center items-center h-screen preserve-3d -z-10">
                     <div className="mb-8 z-10">
                         <img 
-                            src={background_img} 
+                            src={profile_img} 
                             alt="Profile" 
                             className="w-64 h-64 rounded-full object-cover border-4 border-white shadow-lg"
                         />

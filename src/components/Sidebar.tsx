@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
 import './Sidebar.css';
 
@@ -10,12 +11,12 @@ interface SidebarProps {
 const Sidebar = (props: SidebarProps): React.JSX.Element => {
   return (
     <Menu>
-      <a className="menu-item" href="/">
+      <Link className="menu-item" to="/">
         Home
-      </a>
-      <a className="menu-item" href="/work">
+      </Link>
+      <Link className="menu-item" to="/work">
         Work
-      </a>
+      </Link>
       <a className="menu-item" href="/music">
         Music
       </a>

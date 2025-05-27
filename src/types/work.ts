@@ -23,7 +23,7 @@ export interface Experience {
   startDate: dayjs.Dayjs;
   endDate: dayjs.Dayjs | null;
   summary: string;
-  description: string;
+  description: string; // Markdown string for rich formatting
   externalFeatures?: ExternalFeature[];
 }
 
@@ -35,5 +35,6 @@ export interface Education {
   startDate: dayjs.Dayjs;
   endDate: dayjs.Dayjs | null;
   summary: string;
-  description: string;
+  description: string; // Markdown string for rich formatting
+  externalFeatures?: ExternalFeature[];
 } 

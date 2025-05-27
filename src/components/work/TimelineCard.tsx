@@ -1,5 +1,7 @@
 import dayjs from 'dayjs';
 import React from 'react';
+import { LinkPreview } from '@dhaiwat10/react-link-preview';
+import { ExternalFeature } from '../../types/work';
 
 interface TimelineCardProps {
   id: string;
@@ -12,6 +14,7 @@ interface TimelineCardProps {
   };
   summary: string;
   description: string;
+  externalFeatures?: ExternalFeature[];
   isExpanded: boolean;
   onToggle: () => void;
   isLast?: boolean;
@@ -24,6 +27,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
   dateRange,
   summary,
   description,
+  externalFeatures,
   isExpanded,
   onToggle,
   isLast = false
@@ -90,6 +94,37 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
             <div className="pt-4">
               <h4 className="text-lg font-medium text-gray-900 mb-3">Details</h4>
               <p className="text-gray-700 leading-relaxed whitespace-pre-line">{description}</p>
+              
+              {externalFeatures && externalFeatures.length > 0 && (
+                <div className="mt-6">
+                  <h5 className="text-md font-medium text-gray-900 mb-4">Features</h5>
+                  <div className="space-y-4">
+                    {externalFeatures.map((externalFeature, index) => (
+                      <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                        <LinkPreview
+                          url={externalFeature.url}
+                          width="100%"
+                          borderRadius="8px"
+                          showLoader={true}
+                          fallback={
+                            <div className="p-4 bg-gray-50 border border-gray-200 rounded-lg">
+                              <p className="text-gray-600">{externalFeature.title}</p>
+                              <a 
+                                href={externalFeature.url} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="text-[#6a92de] hover:underline"
+                              >
+                                View →
+                              </a>
+                            </div>
+                          }
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         )}

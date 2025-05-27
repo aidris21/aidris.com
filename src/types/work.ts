@@ -10,6 +10,11 @@ export interface Skill {
   projects: string[];
 }
 
+export interface ExternalFeature {
+  url: string;
+  title: string;
+}
+
 export interface Experience {
   id: string;
   company: string;
@@ -19,6 +24,7 @@ export interface Experience {
   endDate: dayjs.Dayjs | null;
   summary: string;
   description: string;
+  externalFeatures?: ExternalFeature[];
 }
 
 export interface Education {

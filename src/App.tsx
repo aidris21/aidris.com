@@ -4,6 +4,7 @@ import './App.css'
 import Sidebar from './components/Sidebar';
 import {Home} from './pages/Home'
 import {Work} from './pages/Work'
+import {Contact} from './pages/Contact'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Work />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>

@@ -17,12 +17,9 @@ const Sidebar = (props: SidebarProps): React.JSX.Element => {
       <Link className="menu-item" to="/work">
         Work
       </Link>
-      <a className="menu-item" href="/music">
-        Music
-      </a>
-      <a className="menu-item" href="/contact">
+      <Link className="menu-item" to="/contact">
         Contact
-      </a>
+      </Link>
     </Menu>
   );
 };
